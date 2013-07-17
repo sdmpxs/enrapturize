@@ -2,6 +2,9 @@
 /*
 Plugin Name: Enrapture
 Description: Plugin to help our valued clients using Wordpress.
+Version: 1.1
+Author: Shane Marriott
+Author URI: http://enrapture.gg
 */
 
 
@@ -88,7 +91,7 @@ function github_plugin_updater_init() {
 			'access_token' => '',
 		);
 
-		new WP_GitHub_Updater( $config );
+		new WPGitHubUpdater( $config );
 
 	}
 
