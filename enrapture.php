@@ -2,7 +2,7 @@
 /*
 Plugin Name: Enrapture
 Description: Plugin to help our valued clients using Wordpress.
-Version: 1.1
+Version: 1.2
 Author: Shane Marriott
 Author URI: http://enrapture.gg
 */
