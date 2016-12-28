@@ -2,7 +2,7 @@
 /*
 Plugin Name: Enrapture
 Description: Plugin to help our valued clients using Wordpress.
-Version: 1.2
+Version: 1.3
 Author: Shane Marriott
 Author URI: http://enrapture.gg
 */
@@ -26,8 +26,7 @@ function my_custom_logo() {
 
 function my_custom_login_logo() {
     echo '<style type="text/css">
-        h1 a { background-image:url('.plugins_url( 'images/enraptureadminlogo.png' , __FILE__ ) .') !important; }
-    </style>';
+          .login h1 a { width: 326px !important; background-image:url('.plugins_url( 'images/enraptureadminlogo.png' , __FILE__ ) .') !important; background-size: 326px auto !important;}    </style>';
 }
 
 add_action('login_head', 'my_custom_login_logo');
