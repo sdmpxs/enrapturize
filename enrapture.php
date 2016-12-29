@@ -2,7 +2,7 @@
 /*
 Plugin Name: Enrapture
 Description: Plugin to help our valued clients using Wordpress.
-Version: 1.3
+Version: 1.4
 Author: Shane Marriott
 Author URI: http://enrapture.gg
 */
@@ -13,7 +13,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
- 
+
  add_action('admin_head', 'my_custom_logo');
 
 function my_custom_logo() {
@@ -46,13 +46,13 @@ add_action('login_head', 'my_custom_login_logo');
 
 function remove_footer_admin () {
     echo "Thank-you for choosing Enrapture. If you need any help, please <a href=\"http://enrapture.gg/contact/\" target=\"_blank\">contact us.</a>";
-} 
+}
 
 add_filter('admin_footer_text', 'remove_footer_admin');
- 
 
 
-remove_action('wp_head', 'wp_generator'); 
+
+remove_action('wp_head', 'wp_generator');
 
  function remove_dashboard_widgets() {
 	global $wp_meta_boxes;
@@ -90,7 +90,7 @@ function github_plugin_updater_init() {
 			'access_token' => '',
 		);
 
-		new WPGitHubUpdater( $config );
+		new WP_GitHub_Updater( $config );
 
 	}
 
